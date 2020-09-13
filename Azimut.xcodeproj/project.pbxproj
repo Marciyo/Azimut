@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		9AB6ABDA250E24FE00C75F28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6ABD9250E24FE00C75F28 /* AppDelegate.swift */; };
 		9AB6ABDC250E24FE00C75F28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6ABDB250E24FE00C75F28 /* SceneDelegate.swift */; };
-		9AB6ABDE250E24FE00C75F28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6ABDD250E24FE00C75F28 /* ViewController.swift */; };
-		9AB6ABE1250E24FE00C75F28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB6ABDF250E24FE00C75F28 /* Main.storyboard */; };
+		9AB6ABDE250E24FE00C75F28 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6ABDD250E24FE00C75F28 /* MapViewController.swift */; };
 		9AB6ABE3250E250100C75F28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB6ABE2250E250100C75F28 /* Assets.xcassets */; };
 		9AB6ABE6250E250100C75F28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB6ABE4250E250100C75F28 /* LaunchScreen.storyboard */; };
 		9AB6ABF1250E250200C75F28 /* AzimutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6ABF0250E250200C75F28 /* AzimutTests.swift */; };
 		9AB6ABFC250E250200C75F28 /* AzimutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6ABFB250E250200C75F28 /* AzimutUITests.swift */; };
+		9AB6AC0A250E26FE00C75F28 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6AC09250E26FE00C75F28 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,7 @@
 		9AB6ABD6250E24FE00C75F28 /* Azimut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Azimut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB6ABD9250E24FE00C75F28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AB6ABDB250E24FE00C75F28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9AB6ABDD250E24FE00C75F28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9AB6ABE0250E24FE00C75F28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AB6ABDD250E24FE00C75F28 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9AB6ABE2250E250100C75F28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AB6ABE5250E250100C75F28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AB6ABE7250E250100C75F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		9AB6ABF7250E250200C75F28 /* AzimutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AzimutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB6ABFB250E250200C75F28 /* AzimutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzimutUITests.swift; sourceTree = "<group>"; };
 		9AB6ABFD250E250200C75F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AB6AC09250E26FE00C75F28 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +101,8 @@
 			children = (
 				9AB6ABD9250E24FE00C75F28 /* AppDelegate.swift */,
 				9AB6ABDB250E24FE00C75F28 /* SceneDelegate.swift */,
-				9AB6ABDD250E24FE00C75F28 /* ViewController.swift */,
-				9AB6ABDF250E24FE00C75F28 /* Main.storyboard */,
+				9AB6ABDD250E24FE00C75F28 /* MapViewController.swift */,
+				9AB6AC09250E26FE00C75F28 /* LocationManager.swift */,
 				9AB6ABE2250E250100C75F28 /* Assets.xcassets */,
 				9AB6ABE4250E250100C75F28 /* LaunchScreen.storyboard */,
 				9AB6ABE7250E250100C75F28 /* Info.plist */,
@@ -234,7 +234,6 @@
 			files = (
 				9AB6ABE6250E250100C75F28 /* LaunchScreen.storyboard in Resources */,
 				9AB6ABE3250E250100C75F28 /* Assets.xcassets in Resources */,
-				9AB6ABE1250E24FE00C75F28 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +258,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AB6ABDE250E24FE00C75F28 /* ViewController.swift in Sources */,
+				9AB6AC0A250E26FE00C75F28 /* LocationManager.swift in Sources */,
+				9AB6ABDE250E24FE00C75F28 /* MapViewController.swift in Sources */,
 				9AB6ABDA250E24FE00C75F28 /* AppDelegate.swift in Sources */,
 				9AB6ABDC250E24FE00C75F28 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +297,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9AB6ABDF250E24FE00C75F28 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9AB6ABE0250E24FE00C75F28 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9AB6ABE4250E250100C75F28 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
